@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>Kemispel</title>
+		<meta charset=utf-8>
+	</head>
+	<body>
+		<!-- <input id="mol-input" name="skriv namn här" value="C(Cl)(Cl)(Cl)C(Cl)(Cl)(Cl)"> -->
+		<h1 id="atom-name">Kemispel</h1>
+		<button id="restart-button">Ny molekyl</button>
+		<h4 id="molecule-smiles">POWERED BY SMILES</h4>
+		<h4 id="warnings"></h4>
+		<!-- <h4 id="molecule-formula">FORMULA</h4> -->
+		<canvas id="mol-canvas" width="540" height="360"></canvas>
+		<canvas id="target-canvas" width="540" height="360"></canvas>
+		<br>
+		<div id="win" hidden>
+			<br>
+			<h2>
+				Du vann! Bra jobbat! <button id="play-again-button">Spela igen</button>
+			</h2>
+		</div>
+		<button type="button" id="add-substituent">lägg till substituent</button>
+		<!-- <button type="button" id="sub-substituent">ta bort substituent</button> -->
+		<br>
+		<div id="sub-div">
+		</div>
+		antal kolatomer
+		<select id="carbon-atoms">
+			<option value="1,met">met</option>
+			<option value="2,et" selected>et</option>
+			<option value="3,prop">prop</option>
+			<option value="4,but">but</option>
+			<option value="5,pent">pent</option>
+			<option value="6,hex">hex</option>
+			<option value="7,hept">hept</option>
+			<option value="8,okt">okt</option>
+		</select>
+		<br>
+		<button type="button" id="add-fun">lägg till funktionell grupp</button>
+		<!-- <button type="button" id="sub-fun">ta bort funktionell grupp</button> -->
+		<div id="fun-div">
+		</div>
+		<br>
+
+		<br>
+		renderingsläge:
+		<select id="render-mode">
+			<option value="compact">kompakt</option>
+			<option value="default" selected>förvald</option>
+			<option value="standard">standard</option>
+			<option value="allballs">allballs</option>
+		</select>
+		<br>
+		<button type="button" id="render">rendera!</button>
+		<br>
+		<!--SCRIPTS-->
+		<script src="https://unpkg.com/smiles-drawer@2.4.1/dist/smiles-drawer.min.js"></script>
+		<script src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.wasm"></script>
+		<script src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.js"></script>
+		<!--Local code-->
+		<script src="global_consts.js"></script>
+		<script src="input.js"></script>
+		<script src="smiles_gen.js"></script>
+		<script src="target_gen.js"></script>
+		<script src="smiles_draw.js"></script>
+		<!--/SCRIPTS-->
+
+		<br>
+		<br>
+		Webbsidan använder <a href="https://github.com/reymond-group/smilesDrawer">SmilesDrawer</a>
+		och <a href="https://github.com/rdkit/rdkit-js">RDKit-js</a>.
+		<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script> -->
+	</body>
+</html>
