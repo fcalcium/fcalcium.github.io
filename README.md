@@ -5,3 +5,6 @@ Some web-based projects are hosted here
 ## [Kemispel](https://fcalcium.github.io/kemispel)
 A Swedish game of chemical nomenclature. It's very machine-translatable.
 [README.md](kemispel/README.md)
+
+## [Poker Counter](https://fcalcium.github.io/poker-counter)
+A counter for poker games.
