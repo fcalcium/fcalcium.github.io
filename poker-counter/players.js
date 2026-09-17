@@ -38,10 +38,11 @@ function add_player() {
 				<span class="name">namn</span>
 				<button onclick="rename_player(this)">✏️</button>
 				<button onclick="delete_player(this)">🗑️</button>
+				<button onclick="change_value(this)">🔢</button>
 				<br>
-				<span class="value">900</span>
+				<span class="value">1000</span>
 				(
-				<span class="potted">40</span>
+				<span class="potted">0</span>
 				)
 				<br>
 				<button onclick="check(this)">check</button>
@@ -111,4 +112,9 @@ function win(win_button) {
   }
 
   win_button.parentNode.querySelector(".value").innerHTML = Number(win_button.parentNode.querySelector(".value").innerHTML) + total_pot;
+}
+
+function change_value(number_button) {
+  number_button.parentNode.querySelector(".value").innerHTML = Number(prompt("New value"));
+  number_button.parentNode.querySelector(".potted").innerHTML = 0;
 }
