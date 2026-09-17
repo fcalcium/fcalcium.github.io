@@ -24,3 +24,13 @@ const global_subs = {
   Fluor: ["F", "fluor"],
 }
 
+const global_stems = {
+  met: "1,met",
+	et: "2,et",
+	prop: "3,prop",
+	but: "4,but",
+	pent: "5,pent",
+	hex: "6,hex",
+	hept: "7,hept",
+	okt: "8,okt",
+}

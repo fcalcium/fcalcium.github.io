@@ -1,3 +1,13 @@
+// Choose stem
+
+// Global, run directly
+
+let carbon_selection = document.getElementById("carbon-atoms");
+for (var stem in global_stems) {
+  carbon_selection.innerHTML += "<option value=" + global_stems[stem] + ">" + stem + "</option>\n";
+}
+
+
 // Remove button
 
 

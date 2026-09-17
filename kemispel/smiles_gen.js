@@ -194,6 +194,7 @@ function get_chosen_molecule() {
 
   // Carbs
   let carbon_length = document.getElementById("carbon-atoms").value.split(",");
+  console.log("carbon_length: " + carbon_length);
 
 
   // Funs
