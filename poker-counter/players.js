@@ -45,10 +45,10 @@ function add_player() {
 				<span class="potted">0</span>
 				)
 				<br>
-				<button onclick="check(this)">check</button>
-				<button onclick="bet(this)">bet</button>
+				<button class="button" onclick="check(this)">check</button>
+				<button class="button" onclick="bet(this)">bet</button>
 				<br>
-				<button onclick="win(this)">win</button>
+				<button class="button" onclick="win(this)">win</button>
 				<!--<button onclick="fold(this)">fold</button>-->
 			</div>
   `);
