@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 #poker-players-grid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -11,7 +15,7 @@
   /* padding: 10px; */
   padding: 1%;
   /* font-size: 25px; */
-  font-size: largest;
+  font-size: 1.5em;
   text-align: center;
 }
 
